@@ -1,0 +1,630 @@
+#test. Tom-Tec 7 excellent. Frank77GLD
+# Wat je hier aanpast ook in extract-files.sh ensetup-makefiles.sh aanpassen
+#/
+#build.prop
+key_921600.psr
+key_3000000.psr
+ts.conf
+
+#app/
+app/A777_FactoryTest.apk
+#CopyInstall.apk
+#ES_FileExplorer.apk
+#Facebook.apk
+#GoogleBackupTransport.apk
+#GoogleContactsSyncAdapter.apk
+#GoogleLoginService.apk
+#GooglePinyin.apk
+#GoogleQuickSearchBox.apk
+#GoogleServicesFramework
+#Launcher2.apk
+#MarketUpdater.apk
+#MusicFX.apk
+#NetworkLocation.apk
+#TelechipsSystemUpdater.apk
+#Twitter.apk
+app/Vending.apk
+#VoiceSearch.apk
+#Youtube.apk
+
+#Executable files
+# bin
+#bin/
+bin/bugmailer.sh
+bin/busybox
+bin/chkntfs
+bin/flash_eraseall
+bin/hostapd
+bin/hostapd_cli
+bin/hostapd_wps
+# bin/ip
+# bin/ip6tables
+bin/iwconfig
+bin/iwlist
+bin/make_ext4fs
+bin/mem
+bin/mkntfs
+bin/netd
+bin/rild
+bin/send_bug
+bin/setup_fs
+bin/tc
+bin/vold
+bin/wpa_cli
+bin/wpa_supplicant
+
+#etc/?
+etc/apns-conf.xml
+#etc/audio_effects.conf
+#dbus.conf Permission denied. zit in cm.
+#etc/dbus.conf
+etc/dhcpcd.conf
+#event-log-tags
+#fallback_fonts.xml
+#hosts
+#zit in cm etc/init.goldfish.sh
+#install-recovery.sh
+etc/media_profiles.xml
+#zit in cm etc/mkshrc
+#etc/resolv.conf waar staat deze file..?
+#system_fonts.xml
+etc/vold.fstab
+
+#etc/bluetooth/
+# die met # er voor geven: Permission denied
+#etc/bluetooth/audio.conf
+#etc/bluetooth/auto_pairing.conf
+etc/bluetooth/blacklist.conf
+#etc/bluetooth/input.conf
+#etc/bluetooth/network.conf
+
+#etc/dhcpcd/
+#zit in cm in cm etc/dhcpcd/dhcpcd-run-hooks
+#zit in cm etc/dhcpcd/dhcpcd-hooks/
+#zit in cm in cm etc/dhcpcd/dhcpcd-hooks/20-dns.conf
+#zit in cm in cm etc/dhcpcd/dhcpcd-hooks/95-configured
+
+# Pull permissions.
+#etc/permissions/ Files van tablet die het zelfde zijn als cm laat ik van cm source pakken.. Files die niet in cm zitten van tablet halen?
+#compare to the files in cm at: frameworks/base/data/etc/
+etc/permissions/com.google.android.maps.xml
+etc/permissions/com.google.android.media.effects.xml
+#hier onder niet in cm. nakijken. kan weg?
+etc/permissions/com.google.widevine.software.drm.xml
+etc/permissions/features.xml
+#etc/handheld_core_hardware.xml
+
+#etc/ppp/
+etc/ppp/chap-secrets
+etc/ppp/gprs-connect-chat
+etc/ppp/init.gprs-pppd
+etc/ppp/ip-down
+etc/ppp/ip-up
+#etc/ppp/ip-up-vpn
+
+#etc/ril/
+etc/ril/ril.xml
+
+#etc/security/
+#otacerts.zip
+#etc/security/cacerts
+
+#etc/wifi/
+etc/wifi/hostapd.conf
+etc/wifi/wpa_supplicant.conf
+
+#fonts/
+
+# niet in de out rom:
+#framework/
+framework/com.android.future.usb.accessory.jar
+framework/com.google.android.maps.jar
+framework/com.google.android.media.effects.jar
+
+#libs
+#lib/ nakijken. These are: PRODUCT_COPY_FILES += \\
+# in cm lib/libandroid.so
+# in cm lib/libandroid_runtime.so
+# in cm lib/libandroid_servers.so
+#lib/libangrybirds.so
+#Audio:
+# in cm lib/libaudioeffect_jni.so
+# in cm lib/libaudioflinger.so
+lib/libaudioutils.so
+# in cm lib/libbcc.so
+# in cm lib/libbcc.so.sha1
+#Rest van de lib*so files:
+# in cm lib/libbcinfo.so
+# in cm lib/libbinder.so
+# in cm lib/libc.so
+# Camera
+# in cm lib/libcamera_client.so
+# in cm lib/libcameraservice.so
+# in cm lib/libchromium_net.so
+# in cm lib/libclcore.bc
+# in cm lib/libc_malloc_debug_leak.so
+# in cm lib/libc_malloc_debug_qemu.so
+# in cm lib/libcrypto.so
+# in cm lib/libctest.so
+# in cm lib/libcutils.so
+# in cm lib/libdbus.so
+# in cm lib/libdefcontainer_jni.so
+# in cm lib/libdiskconfig.so
+# in cm lib/libdl.so
+# in cm lib/libdrm1.so
+# in cm lib/libdrm1_jni.so
+# in cm lib/libdrmframework.so
+# in cm lib/libdrmframework_jni.so
+# in cm lib/libdvm.so
+# in cm lib/libeffects.so
+# in cm lib/libEGL.so
+# in cm lib/libemoji.so
+# in cm lib/libETC1.so
+# in cm lib/libexif.so
+# in cm lib/libexpat.so
+# in cm lib/libext2_blkid.so
+# in cm lib/libext2_com_err.so
+# in cm lib/libext2_e2p.so
+# in cm lib/libext2fs.so
+# in cm lib/libext2_profile.so
+# in cm lib/libext2_uuid.so
+# in cm lib/libext4_utils.so
+lib/libextenddisplay.so
+# in cm lib/libFFTEm.so
+# in cm lib/libfilterfw.so
+# in cm lib/libfilterpack_imageproc.so
+# in cm lib/libgabi++.so
+# in cm lib/libGLESv1_CM.so
+# in cm lib/libGLESv2.so
+# in cm lib/libGLESv2_dbg.so
+# in cm lib/libgui.so
+# in cm lib/libhardware.so
+# in cm lib/libhardware_legacy.so
+# in cm lib/libharfbuzz.so
+lib/libhdmi.so
+lib/libhwui.so
+# in cm lib/libicui18n.so
+# in cm lib/libicuuc.so
+# in cm lib/libinput.so
+# in cm lib/libiprouteutil.so
+lib/libjni_googlepinyinime_4.so
+lib/libjni_googlepinyinime_latinime_4.so
+# in cm lib/libjnigraphics.so
+# in cm lib/libjni_latinime.so
+# in cm lib/libjni_mosaic.so
+# Camera
+# in cm lib/libjpeg.so
+# in cm lib/liblog.so
+# in cm lib/libm.so
+# in cm lib/libmedia.so
+# in cm lib/libmedia_jni.so
+# in cm lib/libmediaplayerservice.so
+lib/libmtdutils1.so
+# in cm lib/libmtp.so
+# in cm lib/libnativehelper.so
+# in cm lib/libnetlink.so
+# in cm lib/libnetutils.so
+# in cm lib/libnfc_ndef.so
+lib/libnvomxadaptor.so
+## OMX
+lib/libOMX.TCC.aacdec.so
+lib/libOMX.TCC.aacenc.so
+lib/libOMX.TCC.apedec.so
+lib/libOMX.TCC.audio.so
+lib/libOMX.TCC.base.so
+lib/libOMX.TCC.flacdec.so
+lib/libOMX.TCC.Google.vpxdec.so
+lib/libOMX.TCC.mp2dec.so
+lib/libOMX.TCC.mp3dec.so
+lib/libOMX.TCC.mp3enc.so
+lib/libOMX.TCC.pcmdec.so
+lib/libOMX.TCC.radec.so
+lib/libOMX.TCC.spdif.so
+lib/libOMX.TCC.VideoDec.so
+lib/libOMX.TCC.VideoEnc.so
+lib/libOMX.TCC.vorbisdec.so
+lib/libOMX.TCC.VPUDec.so
+lib/libOMX.TCC.VPUEnc.so
+lib/libOMX.TCC.wmadec.so
+# in cm lib/libOpenMAXAL.so grote nakijken
+# in cm lib/libOpenSLES.so
+# in cm lib/libpagemap.so
+lib/libpcmhost_skype.so
+# in cm lib/libpixelflinger.so
+# in cm lib/libpmap.so
+# in cm lib/libpower.so
+# in cm lib/libpowermanager.so
+#used in BoardConfig. Radio file.
+# in cm lib/libril.so
+lib/libril.so
+# in cm lib/libRS.so
+# in cm lib/librs_jni.so
+# in cm lib/librtp_jni.so
+#sensor
+# in cm lib/libsensorservice.so
+# in cm lib/libskia.so
+# in cm lib/libsonivox.so
+#audio
+# in cm lib/libsoundpool.so
+# in cm lib/libspeexresampler.so
+# in cm lib/libsqlite.so
+# in cm lib/libsqlite_jni.so
+# in cm lib/libSR_AudioIn.so
+# in cm lib/libsrec_jni.so
+# in cm lib/libssl.so
+# in cm lib/libstagefright.so
+# in cm lib/libstagefright_amrnb_common.so
+# in cm lib/libstagefright_avc_common.so
+# in cm lib/libstagefright_enc_common.so
+# in cm lib/libstagefright_foundation.so
+# in cm lib/libstagefright_omx.so
+# in cm lib/libstagefright_soft_aacdec.so
+# in cm lib/libstagefright_soft_amrdec.so
+# in cm lib/libstagefright_soft_g711dec.so
+# in cm lib/libstagefright_soft_h264dec.so
+# in cm lib/libstagefright_soft_mp3dec.so
+# in cm lib/libstagefright_soft_mpeg4dec.so
+# in cm lib/libstagefright_soft_vorbisdec.so
+# in cm lib/libstagefright_soft_vpxdec.so
+# in cm lib/libstagefright_yuv.so
+# in cm lib/libstdc++.so
+# in cm lib/libstlport.so
+# in cm lib/libsurfaceflinger.so
+# in cm lib/libsurfaceflinger_client.so
+# in cm lib/libsystem_server.so
+# in cm lib/libsysutils.so
+lib/libTCC_ASF_DMX.so
+lib/libTCC_CDK_CONFIG.so
+lib/libTCC_Decoder.so
+lib/libTCC_Encoder.so
+lib/libtcc-evdo-ril.so
+lib/libTCC_OMXCore.so
+lib/libTCC_RM_DMX.so
+lib/libtcc-wcdma-ril.so
+# in cm lib/libthread_db.so
+lib/libtinyalsa.so
+# in cm lib/libttscompat.so
+lib/libttspico.so
+# in cm lib/libui.so
+# in cm lib/libusbhost.so
+# in cm lib/libutils.so
+# in cm lib/libvariablespeed.so
+lib/libvideochat_jni.so
+lib/libvideochat_stabilize.so
+lib/libvideoeditor_jni.so
+lib/libvideoeditorplayer.so
+#libvideohost_skype.so
+lib/libvoicesearch.so
+# in cm lib/libvorbisidec.so
+# in cm lib/libwebcore.so
+# in cm lib/libwebrtc_audio_preprocessing.so
+# in cm lib/libwilhelm.so
+lib/libwnndict.so
+# in cm lib/libwpa_client.so
+# in cm lib/libz.so
+
+#lib/drm/
+# in cm lib/drm/libfwdlockengine.s
+
+# Graphics 
+# EGL
+#lib/egl/
+lib/egl/egl.cfg
+# in cm lib/egl/libGLES_android.so
+
+# HAL
+#lib/hw/
+# in cm lib/hw/audio.primary.default.so
+lib/hw/audio.primary.tcc892x.so
+# in cm lib/hw/audio_policy.default.so
+# Camera
+# in cm lib/hw/camera.goldfish.so
+lib/hw/camera.tcc892x.so
+# in cm lib/hw/gps.goldfish.so
+lib/hw/gps.tcc892x.so
+# in cm lib/hw/gralloc.default.so
+# in cm lib/hw/lights.goldfish.so
+lib/hw/lights.tcc892x.so
+# Sensors:
+# in cm lib/hw/sensors.goldfish.so
+lib/hw/sensors.tcc892x.so
+
+#lib/modules/
+lib/modules/vpu_decoder.ko
+lib/modules/vpu_decoder_ext.ko
+lib/modules/vpu_encoder.ko
+lib/modules/vpu_manager.ko
+
+#lib/soundfx/
+# in cm lib/soundfx/libaudiopreprocessing.so
+# in cm lib/soundfx/libbundlewrapper.so
+# in cm lib/soundfx/libreverbwrapper.so
+# in cm lib/soundfx/libvisualizer.so
+
+#media/ Bij extract-files.sh toevoegen
+media/audio/alarms/Alarm_Beep_01.ogg
+media/audio/alarms/Alarm_Beep_02.ogg
+media/audio/alarms/Alarm_Beep_03.ogg
+media/audio/alarms/Alarm_Buzzer.ogg
+media/audio/alarms/Alarm_Classic.ogg
+media/audio/alarms/Alarm_Rooster_02.ogg
+media/audio/alarms/Barium.ogg
+media/audio/alarms/Cesium.ogg
+media/audio/alarms/Plutonium.ogg
+media/audio/alarms/Scandium.ogg
+
+#media/audio/notifications/
+media/audio/notifications/Aldebaran.ogg
+media/audio/notifications/Altair.ogg
+media/audio/notifications/Antares.ogg
+media/audio/notifications/Antimony.ogg
+media/audio/notifications/arcturus.ogg
+media/audio/notifications/Argon.ogg
+media/audio/notifications/Beat_Box_Android.ogg
+media/audio/notifications/Beryllium.ogg
+media/audio/notifications/Betelgeuse.ogg
+media/audio/notifications/CaffeineSnake.ogg
+media/audio/notifications/Canopus.ogg
+media/audio/notifications/Capella.ogg
+media/audio/notifications/Castor.ogg
+media/audio/notifications/CetiAlpha.ogg
+media/audio/notifications/Cobalt.ogg
+media/audio/notifications/Cricket.ogg
+media/audio/notifications/DearDeer.ogg
+media/audio/notifications/Deneb.ogg
+media/audio/notifications/Doink.ogg
+media/audio/notifications/DontPanic.ogg
+media/audio/notifications/Drip.ogg
+media/audio/notifications/Electra.ogg
+media/audio/notifications/F1_MissedCall.ogg
+media/audio/notifications/F1_New_MMS.ogg
+media/audio/notifications/F1_New_SMS.ogg
+media/audio/notifications/Fluorine.ogg
+media/audio/notifications/Fomalhaut.ogg
+media/audio/notifications/Gallium.ogg
+media/audio/notifications/Heaven.ogg
+media/audio/notifications/Helium.ogg
+media/audio/notifications/Highwire.ogg
+media/audio/notifications/Iridium.ogg
+media/audio/notifications/Krypton.ogg
+media/audio/notifications/KzurbSonar.ogg
+media/audio/notifications/Merope.ogg
+media/audio/notifications/moonbeam.ogg
+media/audio/notifications/OnTheHunt.ogg
+media/audio/notifications/Palladium.ogg
+media/audio/notifications/pixiedust.ogg
+media/audio/notifications/pizzicato.ogg
+media/audio/notifications/Plastic_Pipe.ogg
+media/audio/notifications/Polaris.ogg
+media/audio/notifications/Pollux.ogg
+media/audio/notifications/Procyon.ogg
+media/audio/notifications/Radon.ogg
+media/audio/notifications/regulus.ogg
+media/audio/notifications/Rubidium.ogg
+media/audio/notifications/Selenium.ogg
+media/audio/notifications/sirius.ogg
+media/audio/notifications/Sirrah.ogg
+media/audio/notifications/SpaceSeed.ogg
+media/audio/notifications/Strontium.ogg
+media/audio/notifications/TaDa.ogg
+media/audio/notifications/Thallium.ogg
+media/audio/notifications/Tinkerbell.ogg
+media/audio/notifications/tweeters.ogg
+media/audio/notifications/vega.ogg
+media/audio/notifications/Voila.ogg
+media/audio/notifications/Xenon.ogg
+media/audio/notifications/Zirconium.ogg
+
+#media/audio/ringtones/
+media/audio/ringtones/ANDROMEDA.ogg
+media/audio/ringtones/Aquila.ogg
+media/audio/ringtones/ArgoNavis.ogg
+media/audio/ringtones/Backroad.ogg
+media/audio/ringtones/BeatPlucker.ogg
+media/audio/ringtones/BentleyDubs.ogg
+media/audio/ringtones/Big_Easy.ogg
+media/audio/ringtones/BirdLoop.ogg
+media/audio/ringtones/Bollywood.ogg
+media/audio/ringtones/BOOTES.ogg
+media/audio/ringtones/BussaMove.ogg
+media/audio/ringtones/Cairo.ogg
+media/audio/ringtones/Calypso_Steel.ogg
+media/audio/ringtones/CANISMAJOR.ogg
+media/audio/ringtones/CaribbeanIce.ogg
+media/audio/ringtones/Carina.ogg
+media/audio/ringtones/CASSIOPEIA.ogg
+media/audio/ringtones/Centaurus.ogg
+media/audio/ringtones/Champagne_Edition.ogg
+media/audio/ringtones/Club_Cubano.ogg
+media/audio/ringtones/CrayonRock.ogg
+media/audio/ringtones/CrazyDream.ogg
+media/audio/ringtones/CurveBall.ogg
+media/audio/ringtones/Cygnus.ogg
+media/audio/ringtones/DancinFool.ogg
+media/audio/ringtones/Ding.ogg
+media/audio/ringtones/DonMessWivIt.ogg
+media/audio/ringtones/Draco.ogg
+media/audio/ringtones/DreamTheme.ogg
+media/audio/ringtones/Eastern_Sky.ogg
+media/audio/ringtones/Enter_the_Nexus.ogg
+media/audio/ringtones/Eridani.ogg
+media/audio/ringtones/EtherShake.ogg
+media/audio/ringtones/FreeFlight.ogg
+media/audio/ringtones/FriendlyGhost.ogg
+media/audio/ringtones/Funk_Yall.ogg
+media/audio/ringtones/GameOverGuitar.ogg
+media/audio/ringtones/Gimme_Mo_Town.ogg
+media/audio/ringtones/Glacial_Groove.ogg
+media/audio/ringtones/Growl.ogg
+media/audio/ringtones/HalfwayHome.ogg
+media/audio/ringtones/hydra.ogg
+media/audio/ringtones/InsertCoin.ogg
+media/audio/ringtones/LoopyLounge.ogg
+media/audio/ringtones/LoveFlute.ogg
+media/audio/ringtones/Lyra.ogg
+media/audio/ringtones/Machina.ogg
+media/audio/ringtones/MidEvilJaunt.ogg
+media/audio/ringtones/MildlyAlarming.ogg
+media/audio/ringtones/Nairobi.ogg
+media/audio/ringtones/Nassau.ogg
+media/audio/ringtones/NewPlayer.ogg
+media/audio/ringtones/Noises1.ogg
+media/audio/ringtones/Noises2.ogg
+media/audio/ringtones/Noises3.ogg
+media/audio/ringtones/No_Limits.ogg
+media/audio/ringtones/OrganDub.ogg
+media/audio/ringtones/Orion.ogg
+media/audio/ringtones/Paradise_Island.ogg
+media/audio/ringtones/Pegasus.ogg
+media/audio/ringtones/PERSEUS.ogg
+media/audio/ringtones/Playa.ogg
+media/audio/ringtones/Pyxis.ogg
+media/audio/ringtones/Revelation.ogg
+media/audio/ringtones/Rigel.ogg
+media/audio/ringtones/Ring_Classic_02.ogg
+media/audio/ringtones/Ring_Digital_02.ogg
+media/audio/ringtones/Ring_Synth_02.ogg
+media/audio/ringtones/Ring_Synth_04.ogg
+media/audio/ringtones/Road_Trip.ogg
+media/audio/ringtones/RomancingTheTone.ogg
+media/audio/ringtones/Safari.ogg
+media/audio/ringtones/Savannah.ogg
+media/audio/ringtones/Scarabaeus.ogg
+media/audio/ringtones/Sceptrum.ogg
+media/audio/ringtones/Seville.ogg
+media/audio/ringtones/Shes_All_That.ogg
+media/audio/ringtones/SilkyWay.ogg
+media/audio/ringtones/SitarVsSitar.ogg
+media/audio/ringtones/Solarium.ogg
+media/audio/ringtones/SpringyJalopy.ogg
+media/audio/ringtones/Steppin_Out.ogg
+media/audio/ringtones/Terminated.ogg
+media/audio/ringtones/Testudo.ogg
+media/audio/ringtones/Third_Eye.ogg
+media/audio/ringtones/Thunderfoot.ogg
+media/audio/ringtones/TwirlAway.ogg
+media/audio/ringtones/URSAMINOR.ogg
+media/audio/ringtones/VeryAlarmed.ogg
+media/audio/ringtones/Vespa.ogg
+media/audio/ringtones/World.ogg
+
+media/audio/ui/camera_click.ogg
+media/audio/ui/camera_focus.ogg
+media/audio/ui/Dock.ogg
+media/audio/ui/Effect_Tick.ogg
+media/audio/ui/KeypressDelete.ogg
+media/audio/ui/KeypressReturn.ogg
+media/audio/ui/KeypressSpacebar.ogg
+media/audio/ui/KeypressStandard.ogg
+media/audio/ui/Lock.ogg
+media/audio/ui/LowBattery.ogg
+media/audio/ui/Undock.ogg
+media/audio/ui/Unlock.ogg
+media/audio/ui/VideoRecord.ogg
+
+# in cm
+#tts/lang_pico/?
+
+# in cm
+#usr/icu/?
+# in cm usr/icu/icudt46l.dat
+#usr/idc/
+usr/idc/ak4187-TouchScreen.idc
+usr/idc/Goodix-TouchScreen.idc
+usr/idc/qwerty.idc
+usr/idc/qwerty2.idc
+usr/idc/tcc-ts.idc
+usr/idc/tcc-ts-goodix-cap.idc
+usr/idc/tcc-ts-sitronix.idc
+
+# Pull keychar files
+#usr/keychars/ in cm
+usr/keychars/Generic.kcm
+usr/keychars/qwerty.kcm
+usr/keychars/qwerty2.kcm
+usr/keychars/Virtual.kcm
+
+# in cm
+# Pull keylayout files
+#usr/keylayout/
+usr/keylayout/AVRCP.kl
+usr/keylayout/Generic.kl
+usr/keylayout/qwerty.kl
+# in cm usr/keylayout/Vendor_05ac_Product_0239.kl
+# in cm usr/keylayout/Vendor_22b8_Product_093d.kl
+# in cm usr/keylayout/Vendor_045e_Product_028e.kl
+# in cm usr/keylayout/Vendor_046d_Product_c216.kl
+# in cm usr/keylayout/Vendor_046d_Product_c294.kl
+# in cm usr/keylayout/Vendor_046d_Product_c299.kl
+# in cm usr/keylayout/Vendor_046d_Product_c532.kl
+# in cm usr/keylayout/Vendor_054c_Product_0268.kl
+
+# in cm
+#usr/share/bmd/
+# in cm usr/share/bmd/RFFspeed_501.bmd
+# in cm usr/share/bmd/RFFstd_501.bmd
+
+# in cm
+#usr/share/zoneinfo/
+usr/share/zoneinfo/zoneinfo.dat
+usr/share/zoneinfo/zoneinfo.idx
+usr/share/zoneinfo/zoneinfo.version
+
+# in cm
+#usr/srec/config/en.us/
+usr/srec/config/en.us/baseline.par
+usr/srec/config/en.us/baseline8k.par
+usr/srec/config/en.us/baseline11k.par
+
+# in cm
+#usr/srec/config/en.us/dictionary/
+usr/srec/config/en.us/dictionary/basic.ok
+usr/srec/config/en.us/dictionary/cmu6plus.ok.zip
+usr/srec/config/en.us/dictionary/enroll.ok
+
+# in cm
+#usr/srec/config/en.us/g2p/
+usr/srec/config/en.us/g2p/en-US-ttp.data
+
+# in cm
+#usr/srec/config/en.us/grammars/
+usr/srec/config/en.us/grammars/boolean.g2g
+usr/srec/config/en.us/grammars/phone_type_choice.g2g
+usr/srec/config/en.us/grammars/VoiceDialer.g2g
+
+# in cm
+#usr/srec/config/en.us/models/
+usr/srec/config/en.us/models/generic.swiarb
+usr/srec/config/en.us/models/generic8.lda
+usr/srec/config/en.us/models/generic8_f.swimdl
+usr/srec/config/en.us/models/generic8_m.swimdl
+usr/srec/config/en.us/models/generic11.lda
+usr/srec/config/en.us/models/generic11_f.swimdl
+usr/srec/config/en.us/models/generic11_m.swimdl
+
+#vendor/lib/
+vendor/lib/libMali.so
+# Pull Stage Fright.
+vendor/lib/libstagefrighthw.so
+vendor/lib/libTCC_CDK_AUDIO.so
+vendor/lib/libTCC_CDK_LIB.so
+vendor/lib/libTCC_CDK_WRAPPER.so
+vendor/lib/libTCCInterSubtitle.so
+vendor/lib/libTCCsubtitle.so
+vendor/lib/libUMP.so
+
+# EGL
+#vendor/lib/egl/
+vendor/lib/egl/libEGL_mali.so
+vendor/lib/egl/libGLESv1_CM_mali.so
+vendor/lib/egl/libGLESv2_mali.so
+
+# Pull HW libs/HAL
+#vendor/lib/hw/
+vendor/lib/hw/gralloc.tcc892x.so
+vendor/lib/hw/hwcomposer.tcc892x.so
+
+#wifi/
+wifi/wlan.ko
+
+#xbin?
